@@ -1,2 +1,2 @@
 # Eidp_Gruppe6
-# Repository für Einführung in die Programmierung
+Repository für Einführung in die Programmierung
