@@ -1,5 +1,5 @@
 
-public class EidpÜbungsblatt {
+public class EidpUebungsblatt {
 
 
 	
@@ -39,13 +39,13 @@ public class EidpÜbungsblatt {
 		//einer Division aus. '''''''
 		
 		boolean f = a==b || b>a;
-		//f = true Der Vergleichs-Operator == prüft ob a = b und der Operator > prüft ob b größer
-		//als a ist. Beide Operationen sind mit einer Oder Verknüpfung || verknüpft. Liefert einer oder
+		//f = true Der Vergleichs-Operator == prueft ob a = b und der Operator > prueft ob b groesser
+		//als a ist. Beide Operationen sind mit einer Oder Verknuepfung || verknuepft. Liefert einer oder
 		//beide Einzelvergleiche true, wird f der Wert true zugewiesen. Ansonsten ist f false.  
 		
 		a +=2;
 		boolean g = a!=b;
-		//g = true Da vorher a um 2 erhöht wird, besitzen a und b den gleichen Wert.
+		//g = true Da vorher a um 2 erhaeht wird, besitzen a und b den gleichen Wert.
 		
 		System.out.println("Aufgabe 2: "+"c ="+c+"; d= "+d+"; e= "+e+"; f= "+f+"; g= "+g);
 		System.out.println("..........................................");

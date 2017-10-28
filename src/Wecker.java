@@ -16,7 +16,7 @@ public class Wecker {
 	public void weckerStellen(int WeckzeitStd,int WeckzeitMin){
 		mWeckzeitStd = WeckzeitStd;
 		mWeckzeitMin = WeckzeitMin;
-		//Möglicher Event Listener 
+		//Moeglicher Event Listener 
 		
 		//Ausgabe gestellte Zeit
 		System.out.println("Wecker wurde auf "+mWeckzeitStd+"Uhr "+mWeckzeitMin+" gestellt!");
