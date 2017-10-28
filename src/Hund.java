@@ -1,8 +1,19 @@
-
 public class Hund {
-
-	public Hund() {
-		// TODO Auto-generated constructor stub
+	
+	private String mName;
+	
+	public Hund(String name){
+		mName = name;
 	}
-
+	
+	public String namensschildLesen(){
+		
+		System.out.println("Der Hund heißt "+mName);
+		bellen();
+		return mName;
+	}
+	
+	private void bellen(){
+		System.out.println("Wuff Wuff");
+	}
 }
