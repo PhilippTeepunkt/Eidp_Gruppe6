@@ -7,7 +7,8 @@ public class EidpUebungsblatt {
 		// TODO Auto-generated method stub
 		
 		System.out.println("Aufgabe 1: ");
-		//Aufgabe 1
+		//Aufgabe 1 
+		//Zusammenfassung der Klassen mit Methoden
 		Auto auto = new Auto();
 		auto.fahren(25);
 		auto.tanken("SuperPlus");
@@ -19,14 +20,15 @@ public class EidpUebungsblatt {
 		wecker.weckerStellen(13, 30);
 		wecker.weckerAktivieren();
 		System.out.println("........................................");
+		
 		operators();
 	}
-	
+	//Aufgabe 2 
 	public static void operators(){
 		int a = 3;
 		int b = 5;
 		
-		float c = 5/3;
+		float c = 5/3f;
 		//c = 1,66 Die Operation / Teilt b durch a und speichert das Ergebnis in der
 		//Variable c mit dem Datentyp float
 		
@@ -45,7 +47,7 @@ public class EidpUebungsblatt {
 		
 		a +=2;
 		boolean g = a!=b;
-		//g = true Da vorher a um 2 erhaeht wird, besitzen a und b den gleichen Wert.
+		//g = false Da vorher a um 2 erhaeht wird, besitzen a und b den gleichen Wert.
 		
 		System.out.println("Aufgabe 2: "+"c ="+c+"; d= "+d+"; e= "+e+"; f= "+f+"; g= "+g);
 		System.out.println("..........................................");
