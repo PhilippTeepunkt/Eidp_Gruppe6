@@ -38,25 +38,28 @@ public class Zahlenumrechner {
 			int Z;
 			int R;
 			String output = "";
-			
+			char buchstabe;
 			
 		//calculation
-			while(n>m){
+			
+			while(n>0)
+			{
 				R = n%m;
-				if (R==0){
-					n = n/m;
-					output = R+output;}
-				
-				else if (R>9){
-					Z=R-9;
-					output = alphabet[Z-1]+output;
+				if(R>9)
+				{
+					buchstabe = alphabet[R-10];
+					output = buchstabe+output;
 				}
-				else {output = R+output;}
+				else {
+					output = R+output;
+				}
+				
+				Z = n-R;
+			    n= Z/m;
+				
 			}
 			
-			R = n%m;
-			if (R>9){ Z=R-9; output = alphabet[Z-1]+output;}
-			else {output = R+output;}
-			return (output);
+			return output;
+
 	}
 }
