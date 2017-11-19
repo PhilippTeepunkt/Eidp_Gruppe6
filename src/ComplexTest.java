@@ -13,7 +13,7 @@ public class ComplexTest {
 		sc = new Scanner(System.in);
 		
 			//request operation
-		System.out.println(MULT+" oder "+ADD+" für Rechenoperation eingeben: ");
+		System.out.println(MULT+" oder "+ADD+" fuer Rechenoperation eingeben: ");
 		String rechenoperation = sc.next();
 		
 			//request parameters
@@ -48,7 +48,7 @@ public class ComplexTest {
 		}
 		else
 		{
-			System.out.println("Keine gültige Rechenoperation (add,mult)!");
+			System.out.println("Keine gueltige Rechenoperation (add,mult)!");
 		}
 		
 		//output
