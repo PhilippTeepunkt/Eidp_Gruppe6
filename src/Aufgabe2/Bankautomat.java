@@ -7,8 +7,8 @@ public class Bankautomat {
 	private static final String WILLKOMMENSNACHRICHT = 
 			"Herzlich Willkommen!\n" +
 			"-----------------------------------------\n" +
-			"Was können wir für Sie tuen?\n" +
-			"Drücken Sie:\n" +
+			"Was koennen wir für Sie tuen?\n" +
+			"Druecken Sie:\n" +
 			"   (1) um ihren Kontostand abzufragen, \n" +
 			"   (2) um Geld einzuzahlen\n" +
 			"   (3) um Geld abzuheben \n" +

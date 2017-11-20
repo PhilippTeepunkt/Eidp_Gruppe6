@@ -23,7 +23,7 @@ public class Konto {
 		kontostand = kontostand + betrag;
 		System.out.println(f.format(betrag)+"€ wurden eingezahlt.");
 		System.out.println("----------------------------------------");
-		System.out.println("Ihr Kontostand beträgt: "+f.format(kontostand)+"€");
+		System.out.println("Ihr Kontostand betraegt: "+f.format(kontostand)+"€");
 	}
 	
 	//method abheben
@@ -34,14 +34,14 @@ public class Konto {
 			kontostand = kontostand - betrag;
 			System.out.println(f.format(betrag)+"€ wurden abgehoben.");
 			System.out.println("----------------------------------------");
-			System.out.println("Ihr Kontostand beträgt: "+f.format(kontostand)+"€");
+			System.out.println("Ihr Kontostand betraegt: "+f.format(kontostand)+"€");
 			
 		}
 		else {
 			System.out.println(f.format(kontostand)+"€ konnten abgehoben werden." );
 			kontostand = 0f;
 			System.out.println("----------------------------------------");
-			System.out.println("Ihr Kontostand beträgt: 0€");
+			System.out.println("Ihr Kontostand betraegt: 0€");
 		}
 	}
 	
