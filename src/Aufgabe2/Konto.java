@@ -14,7 +14,7 @@ public class Konto {
 		
 		//init
 		inhaber = mInhaber;
-		kontostand = 0;
+		kontostand = 0f;
 		}
 	
 	//method einzahlen
@@ -39,7 +39,7 @@ public class Konto {
 		}
 		else {
 			System.out.println(f.format(kontostand)+"€ konnten abgehoben werden." );
-			kontostand = 0;
+			kontostand = 0f;
 			System.out.println("----------------------------------------");
 			System.out.println("Ihr Kontostand beträgt: 0€");
 		}
