@@ -29,7 +29,7 @@ public class SchiffeVersenken {
 		}
 		
 		//create some test-ships		
-		playarea[2][2] = true;
+		playarea[2][2] = true; //corresponds Coordinates x=3 y=3
 		playarea[2][3] = true;
 		playarea[5][4] = true;
 		playarea[4][4] = true;
@@ -48,16 +48,31 @@ public class SchiffeVersenken {
 		sc = new Scanner(System.in);
 		while (gameOver > 0){
 			
+			int inX =0;
+			int inY =0;
+			
 			//input
 			System.out.println("x coordinate");
-			int inX = sc.nextInt();
+			inX = sc.nextInt();
+			
+			//checks if input is invalid
+			if(inX>10) {
+				System.out.println("Your x Coordinate is not in the PlayArea!");
+				continue;
+			}
 		
 			System.out.println("y coordinate");
-			int inY = sc.nextInt();
+			inY = sc.nextInt();
+			//**
+			if(inY>10){
+				System.out.println("Your y Coordinate is not in the PlayArea!");
+				continue;
+			}
 		
 			//logic
-			if (hit(inX,inY)){
+			if (hit(inX-1,inY-1)){
 				System.out.println("Eyyyy, you hit me!");
+				playarea[inX-1][inY-1] = false;		
 				
 				//counter for remaining ships
 				gameOver -= 1;
