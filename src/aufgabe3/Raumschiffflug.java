@@ -1,8 +1,6 @@
 package aufgabe3;
 
-import java.math.BigDecimal;
 import java.math.BigInteger;
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Raumschiffflug {
