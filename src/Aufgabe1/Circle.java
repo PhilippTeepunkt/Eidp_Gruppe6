@@ -2,7 +2,7 @@ package Aufgabe1;
 import java.awt.Color;
 
 
-public class Circle implements iShape{ //Inklusions-Polymorphie
+public class Circle implements iShape{ //Bedingung Inklusions-Polymorphie
 	
 	private double radius;
 	private Color color;
@@ -15,7 +15,7 @@ public class Circle implements iShape{ //Inklusions-Polymorphie
 		return radius;
 	}
 	
-	//Inkl.
+	//Inkl. / Overriding
 	public double area(){
 		return radius*Math.PI;
 	}
@@ -24,7 +24,7 @@ public class Circle implements iShape{ //Inklusions-Polymorphie
 		return 2*Math.PI*radius;
 	}
 	
-	//Ad-Hoc Polymorphie
+	//Ad-Hoc Polymorphie / Overloading
 	public void setColor(Color color) {
 		this.color = color;
 	}

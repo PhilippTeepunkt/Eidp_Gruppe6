@@ -2,7 +2,7 @@ package Aufgabe1;
 import java.awt.Color;
 
 
-public class Rectangle implements iShape{ //Inklusions-Polymorphie
+public class Rectangle implements iShape{ //Bedingung Inklusions-Polymorphie
 	
 	private double height;
 	private double width;
@@ -20,7 +20,7 @@ public class Rectangle implements iShape{ //Inklusions-Polymorphie
 	public double getWidth(){
 		return width;
 	}
-	//Inkl. 
+	//Inkl./ Overriding
 	public double area(){
 		return width*height;
 	}

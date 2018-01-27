@@ -33,7 +33,7 @@ public class Triangle implements iShape{  //Inklusions-Polymorphie
 	public double getC(){
 		return c;
 	}
-	//inkl.
+	//inkl. / Overriding
 	public double area(){
 		double s = (a+b+c)/2;
 		return Math.sqrt(s*(s-a)*(s-b)*(s-b));
@@ -48,7 +48,7 @@ public class Triangle implements iShape{  //Inklusions-Polymorphie
 		return color;
 	}
 
-	//Ad-Hoc Polymorphie
+	//Ad-Hoc Polymorphie / Overloading
 	public void setColor(Color color) {
 		this.color = color;
 	}
