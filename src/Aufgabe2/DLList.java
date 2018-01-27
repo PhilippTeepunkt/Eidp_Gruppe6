@@ -4,13 +4,8 @@ public class DLList {
 	
 	public Node firstNode;
 	private Node currentNode;
-	
-	public DLList() {
-		
-		
-		
-	}
-	
+
+	public DLList() {}
 	public boolean isEmpty() {
 		
 		if(firstNode==null) {
@@ -20,6 +15,7 @@ public class DLList {
 		
 	}
 	
+	//prints the content for each element
 	public void display() {
 		
 		if(firstNode!=null) {
@@ -36,6 +32,7 @@ public class DLList {
 		}
 	}
 	
+	//adds element at the given position
 	public void add(int pos, String content) {
 		
 		int i = 0;
@@ -61,6 +58,7 @@ public class DLList {
 		}
 	}
 	
+	//adds element
 	public void add(String content) {
 		
 		if(firstNode==null) {
@@ -79,6 +77,7 @@ public class DLList {
 		}
 	}
 	
+	//removes specific element
 	public void remove(String content) {
 		
 		boolean deleted = false;
@@ -101,6 +100,7 @@ public class DLList {
 		}
 	}
 	
+	//removes the head 
 	public void removeFirst() {
 		
 		if(firstNode!=null&&firstNode.getNextNode()!=null) {
@@ -112,7 +112,8 @@ public class DLList {
 		}
 		
 	}
-	
+
+	//removes the last element
 	public void removeLast() {
 		
 		currentNode = firstNode;
@@ -128,7 +129,8 @@ public class DLList {
 		else 
 		{firstNode = null;}
 	}
-	
+
+	//deletes all elements
 	public void clear() {
 		
 		while(firstNode!=null) {
@@ -137,6 +139,7 @@ public class DLList {
 		
 	}
 	
+	//returns the head-node
 	public String getFirst() {
 		
 		if(firstNode!=null) {
@@ -145,6 +148,7 @@ public class DLList {
 		return "null";
 	}
 	
+	//returns the last element
 	public String getLast() {
 		
 		if(firstNode == null) {
@@ -155,9 +159,9 @@ public class DLList {
 			currentNode = currentNode.getNextNode();
 		}
 		return currentNode.getValue();
-		
 	}
 	
+	//returns content of a specific element	
 	public String get(int pos) {
 		
 		int i = 0;
@@ -174,6 +178,7 @@ public class DLList {
 		return "null";
 	}
 	
+	//concatenates two lists
 	public void concat(DLList mList) {
 		
 		if(firstNode == null) {
@@ -188,6 +193,7 @@ public class DLList {
 		}			
 	}
 	
+	//returns the position of a searched element
 	public int find(String content) {
 		
 		int pos = 0;
@@ -201,9 +207,9 @@ public class DLList {
 			pos++;
 		}
 		return -1;
-		
 	}
 	
+	//checks if a node with given content exists 
 	public boolean contains(String content) {
 		if(find(content)==-1) {
 			return false;
@@ -211,6 +217,7 @@ public class DLList {
 		else return true;
 	}
 	
+	//returns the lists size
 	public int size() {
 		
 		int currentSize=0;		
